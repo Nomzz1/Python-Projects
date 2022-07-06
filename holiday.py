@@ -1,0 +1,13 @@
+print("Cost of Petrol:")
+petrol = float(input())
+print("Cost of Hotel:")
+hotel = float(input())
+print("Cost of Meals:")
+meals = float(input())
+print("Cost of Events:")
+events = float(input())
+print("Cost of Treats:")
+treats = float(input())
+cost = petrol + hotel + meals + events + treats
+print("The total cost of the holiday is: £",cost)
+input()

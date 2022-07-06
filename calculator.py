@@ -1,0 +1,110 @@
+print("Welcome to the calculator.")
+print("Enter the first number:")
+num1 = float(input())
+print("Enter the function (+, -, * or /):")
+func = input()
+print("Enter the second number:")
+num2 = float(input())
+print("Would you like to add a thrid number?")
+print("Please say yes or no.\n")
+denum = input()
+if denum != "no":
+    print("Enter the second function:")
+    func2 = input()
+    print("Enter the third number:")
+    num3 = float(input())
+    if func != "+":
+        if func != "*":
+            if func != "/":
+                if func2 != "+":
+                    if func2 != "*":
+                        if func2 != "/":
+                            answer = num1 - num2 - num3
+                if func2 != "-":
+                    if func2 != "*":
+                        if func2 != "/":
+                            answer = num1 - num2 + num3
+                if func2 != "+":
+                    if func2 != "-":
+                        if func2 != "/":
+                            answer = num1 - num2 * num3
+                if func2 != "+":
+                    if func2 != "*":
+                        if func2 != "-":
+                            answer = num1 - num2 / num3
+    if func != "-":
+        if func != "*":
+            if func != "/":
+                if func2 != "+":
+                    if func2 != "*":
+                        if func2 != "/":
+                            answer = num1 + num2 - num3
+                if func2 != "-":
+                    if func2 != "*":
+                        if func2 != "/":
+                            answer = num1 + num2 + num3
+                if func2 != "+":
+                    if func2 != "-":
+                        if func2 != "/":
+                            answer = num1 + num2 * num3
+                if func2 != "+":
+                    if func2 != "*":
+                        if func2 != "-":
+                            answer = num1 + num2 / num3
+    if func != "+":
+        if func != "*":
+            if func != "-":
+                if func2 != "+":
+                    if func2 != "*":
+                        if func2 != "/":
+                            answer = num1 / num2 - num3
+                if func2 != "-":
+                    if func2 != "*":
+                        if func2 != "/":
+                            answer = num1 / num2 + num3
+                if func2 != "+":
+                    if func2 != "-":
+                        if func2 != "/":
+                            answer = num1 / num2 * num3
+                if func2 != "+":
+                    if func2 != "*":
+                        if func2 != "-":
+                            answer = num1 / num2 / num3
+    if func != "+":
+        if func != "-":
+            if func != "/":
+                if func2 != "+":
+                    if func2 != "*":
+                        if func2 != "/":
+                            answer = num1 * num2 - num3
+                if func2 != "-":
+                    if func2 != "*":
+                        if func2 != "/":
+                            answer = num1 * num2 + num3
+                if func2 != "+":
+                    if func2 != "-":
+                        if func2 != "/":
+                            answer = num1 * num2 * num3
+                if func2 != "+":
+                    if func2 != "*":
+                        if func2 != "-":
+                            answer = num1 * num2 / num3
+if denum != "yes":
+    if func != "+":
+        if func != "*":
+            if func != "/":
+                answer = num1 - num2
+    if func != "-":
+        if func != "*":
+            if func != "/":
+                answer = num1 + num2
+    if func != "+":
+        if func != "*":
+            if func != "-":
+                answer = num1 / num2
+    if func != "+":
+        if func != "-":
+            if func != "/":
+                answer = num1 * num2
+print("Your answer is",answer)
+input()
