@@ -4,11 +4,11 @@ win = Tk()
 def good():
     labelg = Label(text = "Good.")
     labelg.pack(pady = 5)
-    win.after(2000, labelg.destroy)
+    win.after(1000, labelg.destroy)
 def bad():
     labelb = Label(text = "Bad.")
     labelb.pack(pady = 5)
-    win.after(2000, labelb.destroy)
+    win.after(1000, labelb.destroy)
 def end():
     win.destroy()
 label = Label(text = "You have three options:")

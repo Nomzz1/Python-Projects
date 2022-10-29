@@ -1,18 +1,24 @@
-from time import sleep
-values = ["32","5","4","2","1","16","8"]
+def collatz(n):
+    if n % 2 == 0:
+        return n / 2
+    if n % 2 == 1:
+        return 3 * n + 1
+values = [32, 5, 16, 8, 4, 2, 1]
 chain = []
-num = 24
-def func(x):
-    rem = x%2
-    if rem == 0:
-        y = x/2
+def isLoop(n):
+    if n in chain:
+        print(chain)
+        return False
+    if n in values:
+        return True
     else:
-        y = (3*x)+1
-    print(int(x))
-    if str(int(y)) in values:
-        global num
+        chain.append(n)
+        x = collatz(n)
+        return isLoop(x)
+num = 1
+while True:
+    if isLoop(num) == True:
         num += 1
-        y = num
-        print("\n")
-    func(y)
-func(num)
+    else:
+        break
+

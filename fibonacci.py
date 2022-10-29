@@ -1,4 +1,4 @@
-import time
+from time import sleep
 basenum = int(input("Base number: "))
 loop = 0
 num = basenum
@@ -9,4 +9,4 @@ while loop != 1:
     num += addnum
     addnum = oldnum
     print(num)
-
+    sleep(0.005)

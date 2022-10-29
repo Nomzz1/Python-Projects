@@ -14,9 +14,3 @@ else:
             print("You are medium size brain")
         else:
             print("You are big brain")
-input()
-you = input()
-if you == "fat":
-    print("Haha")
-else:
-    print("Yes.")

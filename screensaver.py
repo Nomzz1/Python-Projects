@@ -27,9 +27,11 @@ def main():
     pen.left((360/n)/2)
     pen.left(90)
     pen.pendown()
+    pen.begin_fill()
     for i in range(n):
         pen.forward(length)
         pen.left(360/n)
+    pen.end_fill()
 def end():
     screen.bye()
 count = 1
