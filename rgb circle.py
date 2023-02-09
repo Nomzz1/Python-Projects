@@ -24,5 +24,5 @@ def end():
     win.bye()
 win.onkey(end, "Escape")
 win.listen()
-cw(7200)
+cw(360)
 t.mainloop()

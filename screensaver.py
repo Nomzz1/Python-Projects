@@ -9,7 +9,6 @@ root = canvas.winfo_toplevel()
 root.overrideredirect(1)
 pen = turtle.Turtle()
 pen.width(2)
-pen.speed(50)
 def colour():
     return "#"+random.choice(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"])+random.choice(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"])+random.choice(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"])+random.choice(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"])+random.choice(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"])+random.choice(["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"])
 def main():

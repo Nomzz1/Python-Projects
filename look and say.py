@@ -1,15 +1,22 @@
 def looksay(n):
-    n = str(n)
-    final = ""
-    counter = 1
+    string = ""
+    counter = 0
     for i in range(len(n)):
-        current = n[i]
-        try:
-            if n[i+1] == current:
-                counter += 1
-            else:
-                final += str(counter) + current
-        except IndexError:
-            final += str(counter) + current
-        return final
-print(looksay(12))
+        counter += 1
+        if i+1 >= len(n):
+            string += str(counter) + n[i]
+            return string
+        if n[i+1] != n[i]:
+            string += str(counter) + n[i]
+            counter = 0
+        else:
+            pass
+global count
+count = 0
+def recurse(n):
+    global count
+    count += 1
+    print(looksay(n))
+    if count < 8:
+        recurse(looksay(n))
+recurse("1")

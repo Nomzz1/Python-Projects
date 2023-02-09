@@ -78,4 +78,5 @@ def eat():
 def nothing():
     time = random.randint(1,4)
     print("You did nothing for",time,"hours.")
-    
+def Sleep():
+    pass
